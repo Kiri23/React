@@ -1,2 +1,2 @@
 # React
-starting project that is going to be comined with the MongoDb and NodeJs Project
+starting project that is going to be combined with the MongoDb and NodeJs Project
