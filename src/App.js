@@ -3,8 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 
-var baseUrl = "https://mongodbnodejs-cozmeooroh.now.sh";
-var json = axios.get(baseUrl+'/add')
+
+
+var baseUrl = "https://mongodbnodejs-kaykphhvdl.now.sh";
+var json = axios.get(baseUrl+ '/add')
   .then(function (response) {
     console.log(response);
   })
