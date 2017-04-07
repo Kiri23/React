@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
+var baseUrl = "https://mongodbnodejs-cozmeooroh.now.sh";
+var json = axios.get(baseUrl+'/add')
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+
+// La clase completa es un Componente
 class App1 extends Component {
 
   // Aqui es que Pasa la Magia- Donde creo Mi Html
   render() {
     return (
+      // todo estos son elementos
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -18,7 +31,8 @@ class App1 extends Component {
       </div>
     );
   }
+
 }
 
-
+// le das export al Componente
 export default App1;
